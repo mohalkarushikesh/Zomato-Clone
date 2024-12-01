@@ -1,27 +1,27 @@
 ## Zomato-clone  
 
 1. Key Features of Zomato Clone
-    Home Page: Display a search bar for restaurants, a list of restaurants, categories (e.g., cuisine type), and promotions.
-    Restaurant Listings: Show a list of restaurants with details like name, rating, location, and cuisine.
-    Restaurant Profile: Detailed restaurant page showing menu items, photos, reviews, and ratings.
-    Search Functionality: Users can search for restaurants by location, cuisine, or name.
-    User Registration/Login: Users can create an account and log in to place orders, review restaurants, and save favorites.
-    Admin Panel: For managing restaurants, users, and orders.
-    Reviews and Ratings: Users can leave reviews and rate restaurants.
-    Order Functionality: Users can place orders directly through the app.
+   - Home Page: Display a search bar for restaurants, a list of restaurants, categories (e.g., cuisine type), and promotions.
+   - Restaurant Listings: Show a list of restaurants with details like name, rating, location, and cuisine.
+   - Restaurant Profile: Detailed restaurant page showing menu items, photos, reviews, and ratings.
+   - Search Functionality: Users can search for restaurants by location, cuisine, or name.
+   - User Registration/Login: Users can create an account and log in to place orders, review restaurants, and save favorites.
+   - Admin Panel: For managing restaurants, users, and orders.
+   - Reviews and Ratings: Users can leave reviews and rate restaurants.
+   - Order Functionality: Users can place orders directly through the app.
 
 2. Tech Stack Recommendation
-    Front-End:
-        HTML/CSS/JavaScript: Basic structure and styling of the website.
-        React.js or Vue.js: For building interactive and dynamic components.
-        Bootstrap or Tailwind CSS: For responsive design and components.
-    Back-End:
-        Node.js with Express.js: For building the server-side application and APIs.
-        MongoDB or MySQL: For storing user data, restaurant data, orders, reviews, etc.
-        JWT (JSON Web Token): For user authentication (login/signup).
-Others:
-    Cloud Hosting (e.g., Heroku, AWS, DigitalOcean): For deploying the application.
-    Stripe/PayPal API: For integrating payment gateways.
+    - Front-End:
+       - HTML/CSS/JavaScript: Basic structure and styling of the website.
+       - React.js or Vue.js: For building interactive and dynamic components.
+       - Bootstrap or Tailwind CSS: For responsive design and components.
+    - Back-End:
+       - Node.js with Express.js: For building the server-side application and APIs.
+       - MongoDB or MySQL: For storing user data, restaurant data, orders, reviews, etc.
+       - JWT (JSON Web Token): For user authentication (login/signup).
+    - Others:
+      - Cloud Hosting (e.g., Heroku, AWS, DigitalOcean): For deploying the application.
+      - Stripe/PayPal API: For integrating payment gateways.
 
 3. Database Schema (MongoDB Example)
 a. Users Collection
@@ -185,12 +185,12 @@ For managing restaurants and users, create an Admin Dashboard where you can add,
 
 7. Deployment
 
-    Back-End: Host your Node.js app on platforms like Heroku, AWS, or DigitalOcean.
-    Front-End: Host static assets (HTML/CSS/JS) on Netlify, Vercel, or GitHub Pages.
-    Database: Use MongoDB Atlas for cloud-hosted MongoDB or AWS RDS for MySQL.
+    - Back-End: Host your Node.js app on platforms like Heroku, AWS, or DigitalOcean.
+    - Front-End: Host static assets (HTML/CSS/JS) on Netlify, Vercel, or GitHub Pages.
+    - Database: Use MongoDB Atlas for cloud-hosted MongoDB or AWS RDS for MySQL.
 8. Additional Features
 
-Real-Time Order Tracking: Use Socket.io to update users in real-time about the status of their orders.
-Payment Integration: Integrate Stripe or PayPal to handle payments.
+- Real-Time Order Tracking: Use Socket.io to update users in real-time about the status of their orders.
+- Payment Integration: Integrate Stripe or PayPal to handle payments.
 Social Media Authentication: Allow users to log in using Google or Facebook.
 
