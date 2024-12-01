@@ -1,4 +1,4 @@
-## Zomato-clone  
+## Zomato-clone : Currently under the Developement phase - yet to be updated, stay tuned! 
 
 1. Key Features of Zomato Clone
    - Home Page: Display a search bar for restaurants, a list of restaurants, categories (e.g., cuisine type), and promotions.
