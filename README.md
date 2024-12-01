@@ -1,29 +1,31 @@
+## Zomato-clone  
+
 1. Key Features of Zomato Clone
-Home Page: Display a search bar for restaurants, a list of restaurants, categories (e.g., cuisine type), and promotions.
-Restaurant Listings: Show a list of restaurants with details like name, rating, location, and cuisine.
-Restaurant Profile: Detailed restaurant page showing menu items, photos, reviews, and ratings.
-Search Functionality: Users can search for restaurants by location, cuisine, or name.
-User Registration/Login: Users can create an account and log in to place orders, review restaurants, and save favorites.
-Admin Panel: For managing restaurants, users, and orders.
-Reviews and Ratings: Users can leave reviews and rate restaurants.
-Order Functionality: Users can place orders directly through the app.
+    Home Page: Display a search bar for restaurants, a list of restaurants, categories (e.g., cuisine type), and promotions.
+    Restaurant Listings: Show a list of restaurants with details like name, rating, location, and cuisine.
+    Restaurant Profile: Detailed restaurant page showing menu items, photos, reviews, and ratings.
+    Search Functionality: Users can search for restaurants by location, cuisine, or name.
+    User Registration/Login: Users can create an account and log in to place orders, review restaurants, and save favorites.
+    Admin Panel: For managing restaurants, users, and orders.
+    Reviews and Ratings: Users can leave reviews and rate restaurants.
+    Order Functionality: Users can place orders directly through the app.
+
 2. Tech Stack Recommendation
-Front-End:
-
-HTML/CSS/JavaScript: Basic structure and styling of the website.
-React.js or Vue.js: For building interactive and dynamic components.
-Bootstrap or Tailwind CSS: For responsive design and components.
-Back-End:
-
-Node.js with Express.js: For building the server-side application and APIs.
-MongoDB or MySQL: For storing user data, restaurant data, orders, reviews, etc.
-JWT (JSON Web Token): For user authentication (login/signup).
+    Front-End:
+        HTML/CSS/JavaScript: Basic structure and styling of the website.
+        React.js or Vue.js: For building interactive and dynamic components.
+        Bootstrap or Tailwind CSS: For responsive design and components.
+    Back-End:
+        Node.js with Express.js: For building the server-side application and APIs.
+        MongoDB or MySQL: For storing user data, restaurant data, orders, reviews, etc.
+        JWT (JSON Web Token): For user authentication (login/signup).
 Others:
+    Cloud Hosting (e.g., Heroku, AWS, DigitalOcean): For deploying the application.
+    Stripe/PayPal API: For integrating payment gateways.
 
-Cloud Hosting (e.g., Heroku, AWS, DigitalOcean): For deploying the application.
-Stripe/PayPal API: For integrating payment gateways.
 3. Database Schema (MongoDB Example)
 a. Users Collection
+```
 {
   "_id": ObjectId,
   "name": "John Doe",
@@ -33,7 +35,9 @@ a. Users Collection
   "favorites": [restaurant_ids],  // Array of favorite restaurant IDs
   "orders": [order_ids]  // Array of past orders
 }
+```
 b. Restaurants Collection
+```
 {
   "_id": ObjectId,
   "name": "Pizza Hut",
@@ -53,7 +57,9 @@ b. Restaurants Collection
   },
   "images": [ "image_url1", "image_url2" ]
 }
+```
 c. Orders Collection
+```
 {
   "_id": ObjectId,
   "user_id": ObjectId,
@@ -66,8 +72,10 @@ c. Orders Collection
   "payment_status": "paid/unpaid",
   "order_time": "2024-12-01T12:00:00Z"
 }
+```
 4. Front-End Development
 a. Home Page (HTML)
+```
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -115,7 +123,9 @@ a. Home Page (HTML)
   <script src="app.js"></script>
 </body>
 </html>
+```
 b. Search Functionality (JavaScript)
+```
 document.getElementById("search-btn").addEventListener("click", function() {
   const query = document.getElementById("search-bar").value;
   fetch(`/api/search?query=${query}`)
@@ -125,8 +135,10 @@ document.getElementById("search-btn").addEventListener("click", function() {
       // Render restaurant data dynamically
     });
 });
+```
 5. Back-End Development (Node.js + Express.js)
 a. Setting Up Express Server
+```
 const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
@@ -159,19 +171,25 @@ app.get('/api/search', (req, res) => {
 app.listen(5000, () => {
   console.log('Server is running on port 5000');
 });
+```
 b. API Routes
+```
 GET /api/restaurants: Fetch a list of restaurants.
 GET /api/search?query=...: Search restaurants by name, cuisine, or location.
 POST /api/orders: Create a new order.
 POST /api/login: Authenticate users.
+```
 6. Admin Panel (Optional)
+
 For managing restaurants and users, create an Admin Dashboard where you can add, update, and delete restaurant details, manage user reviews, and track orders.
 
 7. Deployment
-Back-End: Host your Node.js app on platforms like Heroku, AWS, or DigitalOcean.
-Front-End: Host static assets (HTML/CSS/JS) on Netlify, Vercel, or GitHub Pages.
-Database: Use MongoDB Atlas for cloud-hosted MongoDB or AWS RDS for MySQL.
+
+    Back-End: Host your Node.js app on platforms like Heroku, AWS, or DigitalOcean.
+    Front-End: Host static assets (HTML/CSS/JS) on Netlify, Vercel, or GitHub Pages.
+    Database: Use MongoDB Atlas for cloud-hosted MongoDB or AWS RDS for MySQL.
 8. Additional Features
+
 Real-Time Order Tracking: Use Socket.io to update users in real-time about the status of their orders.
 Payment Integration: Integrate Stripe or PayPal to handle payments.
 Social Media Authentication: Allow users to log in using Google or Facebook.
