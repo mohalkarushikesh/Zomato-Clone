@@ -17,8 +17,8 @@
 					<li><a href="#">Get the App</a></li>
 					<li><a href="#">Investor Relations</a></li>
 					<li><a href="#">Add Restaurant</a></li>
-					<li><a href="#">Log In</a></li>
-					<li><a href="#">Sign Up</a></li>
+					<li><a href="login.jsp">Log In</a></li>
+					<li><a href="signup.jsp">Sign Up</a></li>
 				</ul>
 			</nav>
 		</div>
