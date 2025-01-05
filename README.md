@@ -198,7 +198,7 @@ Social Media Authentication: Allow users to log in using Google or Facebook.
 ### Zomato Clone : Track Developement
 
 - **Homepage**: The main page of the Zomato clone.
-  ![Zomato Homepage](![Homepage](src/main/TrackDevelopment/homepage.png))
+  ![Zomato Homepage](src/main/TrackDevelopment/homepage.png)
 
 - **Login Page**: The login interface for the Zomato clone.
   ![Zomato Login Page](src/main/TrackDevelopment/loginpage.png)
